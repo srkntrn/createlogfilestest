@@ -1,0 +1,4 @@
+- hosts: all
+  tasks:
+  - name: File 
+    command: touch /tmp/kubernetes_events_{{ansible_date_time.date}}.log
